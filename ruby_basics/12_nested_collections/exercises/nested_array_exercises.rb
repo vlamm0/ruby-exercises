@@ -74,6 +74,7 @@ def find_favorite(array_of_hash_objects)
   array_of_hash_objects.each do |obj|
     if obj.dig(:is_my_favorite?)
       return obj
+    end
   end
   return nil
   
