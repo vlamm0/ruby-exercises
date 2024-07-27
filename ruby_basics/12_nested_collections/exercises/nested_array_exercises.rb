@@ -72,7 +72,7 @@ def find_favorite(array_of_hash_objects)
   # TIP: there will only be a maximum of one hash in the array that will
   # return true to the :is_my_favorite? key
   array_of_hash_objects.each do |obj|
-    if obj.dig(:is_my_favorite?) #== true
+    if obj.dig(:is_my_favorite?)
       return obj
   end
   return nil
